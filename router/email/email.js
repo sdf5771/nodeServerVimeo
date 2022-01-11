@@ -1,10 +1,22 @@
 var express = require('express');
 var app = express();
 var router = express.Router();
+var mysql = require('mysql');
 var path = require('path');
 
+//DataBase Setting
+var connection = mysql.createConnection({
+    host : 'localhost',
+    port : 3306,
+    user : 'root',
+    password : '520496',
+    database : 'email'
+});
+
+connection.connect();
+
+//Router
 router.post('/form', function(req,res){
-    //get : req.param('email');
     console.log(req.body.email);
     res.render('email.ejs', {'email' : req.body.email});
    // res.send(`<h1> welcome ! ${req.body.email}</h1>`);

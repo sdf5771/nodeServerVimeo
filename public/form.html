@@ -19,7 +19,7 @@
     <script>
         document.querySelector('.ajaxsend').addEventListener('click', function(){
             var inputdata = document.forms[0].elements[0].value;
-            sendAjax('http://127.0.0.1:19991/ajax_send_email', inputdata);
+            sendAjax('http://127.0.0.1:19991/email/ajax', inputdata);
         })
 
         function sendAjax(url, data){
