@@ -13,6 +13,12 @@
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2"
+  },
+  "devDependencies": {
+    "connect-flash": "^0.1.1",
+    "express-session": "^1.17.2",
+    "passport-local": "^1.0.0"
   }
 }
